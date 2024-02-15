@@ -23,3 +23,4 @@ Nous avons été tout le temps connecté via notre salon dédié sur Discord.
    - L'algorithme de ML non supervisé Nearest Neigbors pour la recommandation" astrologique'.
    - L'algorithme de ML KNN ( supervisé) pour la recommandation musique et restaurant.
 
+Je vous invite à regarder la vidéo de présentation : https://youtu.be/b3dlpLCD51c
