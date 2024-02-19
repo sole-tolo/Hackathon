@@ -231,7 +231,17 @@ Choix = st.selectbox(
     ('Arabian','African','American','Argentinian','Asian','Australian','BBQ','European','French','Italian'))
 
 Ville = st.selectbox(
-    'Dans quelle ville veux-tu diner ?', villes) 
+    'Dans quelle ville veux-tu diner ?',  
+('Birmingham',
+ 'Gardendale',
+ 'Homewood',
+  'Woodlands',
+ 'Shenandoah',
+ 'Pinehurst',
+ 'TOMBALL',
+ 'Oak Ridge North',
+ 'Jersey Village')
+ )
 Budget = st.select_slider(
     'Quel est votre budget ?', 
     options= ['$', '$$', '$$$'])
