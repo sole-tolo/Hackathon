@@ -7,13 +7,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import LabelEncoder
 
-Chargement des données
+#Chargement des données
 
 file_path = r"C:\Users\solea\Desktop\Hackathon\okcupid_profiles.csv" df = pd.read_csv(file_path)
 
 file_path2 = r"C:\Users\solea\Desktop\Hackathon\prete.csv" prete = pd.read_csv(file_path2)
 
-🧑🏻‍💻 Code Mise en page
+#🧑🏻‍💻 Code Mise en page
 
 st.title('Bienvenu.es à ROSE BONBON') 
 st.write ( " parce qu'en amour, on est tous kitsch...")
@@ -30,12 +30,12 @@ col2.write("")
 col3.write("")
 }
 
-Lien vers images
+#Lien vers images
 lien_image2 = "https://vss.astrocenter.fr/astrocenter/pictures/28716457-oeil.jpg"
 st.image(lien_image2))
 
-Fonction de recommandation
-🧑🏻‍💻 Usage
+#Fonction de recommandation
+#🧑🏻‍💻 Usage
 
 # Code de recommandation
 def recommandation(orientation_sexuelle,signe_astro, prete):
@@ -96,7 +96,7 @@ def recommandation(orientation_sexuelle,signe_astro, prete):
     # Afficher les informations sur les recommandations dans l'interface utilisateur
     st.dataframe(voisins_originale)
 }
-🧑🏻‍💻 Interphase utilisateur
+#🧑🏻‍💻 Interphase utilisateur
 st.title("Déjà, trouve ton profil idéal. Pour cela, un peu d'astrologie, un peu d'orientation et BAM!" )
 # Vérifier si le formulaire est soumis
 with st.form("my_form"):
@@ -114,7 +114,7 @@ with st.form("my_form"):
         recommandation(orientation_sexuelle,signe_astro, prete)
 }
 
-🧑🏻‍💻 Choix des cadeaux
+#🧑🏻‍💻 Choix des cadeaux
 
 file_path3 = r"C:\Users\solea\Desktop\Hackathon\planned_age_2.csv"
 planned_age = pd.read_csv(file_path3)
@@ -213,7 +213,7 @@ else:
     st.write(f"Le genre sélectionné n'existe pas dans le DataFrame.")
 }
 
-🧑🏻‍💻 Recommandation restaurants par ville et budget
+#🧑🏻‍💻 Recommandation restaurants par ville et budget
 
 st.title("Et maintenant, pensons à l'estomac. Tu dois l'inviter manger!")
 
@@ -258,7 +258,7 @@ df_resto_selec =df_resto_selec[df_resto_selec['Prix'] <= Budget]
 df_resto_selec =df_resto_selec[df_resto_selec['ville']== Ville]
 df_resto_selec[['Nom','Note','Nombre de votes','Prix','ville']]
 
-🧑🏻‍💻 Recommandation de musique
+#🧑🏻‍💻 Recommandation de musique
 
 st.title('Le plus important maintenant... ton ambiance sonore... pour le ou la faire rêver')
 st.write("The perfect sound touch")
